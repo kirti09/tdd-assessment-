@@ -3,5 +3,7 @@ class StringCalculator
   # just to invoke it directly(without creating instance) creating a class method
   def self.add(numbers)
     return 0 if numbers.empty?
+    # when only single number is in #{numbers}
+    return numbers.to_i
   end
 end
